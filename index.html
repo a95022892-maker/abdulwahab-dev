@@ -22,7 +22,7 @@
       color: var(--text);
       line-height: 1.6;
     }
-    .container { max-width: 1050px; margin: 0 auto; padding: 0 1.5rem; }
+    .container { max-width: 1150px; margin: 0 auto; padding: 0 1.5rem; }
     
     /* Navbar */
     header {
@@ -65,7 +65,7 @@
     }
     .hero h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); line-height: 1.15; margin-bottom: 1.25rem; }
     .hero h1 span { color: var(--accent); }
-    .hero p { color: var(--muted); max-width: 680px; font-size: 1.1rem; margin-bottom: 2rem; }
+    .hero p { color: var(--muted); max-width: 720px; font-size: 1.1rem; margin-bottom: 2rem; }
     .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }
     .btn {
       padding: 0.75rem 1.5rem;
@@ -103,7 +103,7 @@
     .section-title { font-size: 1.75rem; margin-bottom: 0.5rem; }
     .section-sub { color: var(--muted); margin-bottom: 2rem; }
 
-    /* Filter Buttons (Interactive JS) */
+    /* Filter Buttons */
     .filter-bar { display: flex; gap: 0.75rem; margin-bottom: 2rem; flex-wrap: wrap; }
     .filter-btn {
       background: var(--card);
@@ -124,7 +124,7 @@
     /* Projects Grid */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 1.5rem;
     }
     .card {
@@ -158,7 +158,7 @@
     }
     .card-links a:hover { text-decoration: underline; }
 
-    /* Interactive Box Calculator Demo */
+    /* Interactive Calculator Demo */
     .calc-box {
       background: var(--card);
       border: 1px solid var(--border);
@@ -213,7 +213,7 @@
       <nav>
         <a href="#" class="logo">Abdul<span>Wahab.js</span></a>
         <div class="nav-links">
-          <a href="#projects">Projects</a>
+          <a href="#projects">Live Portals</a>
           <a href="#js-demo">Live JS Demo</a>
           <a href="#contact">Contact</a>
         </div>
@@ -225,12 +225,12 @@
     <!-- Hero -->
     <section class="hero">
       <span class="badge">Available for JavaScript Internship</span>
-      <h1>Front-End Developer crafting <span>fast, search-optimized</span> JavaScript interfaces.</h1>
+      <h1>Front-End Developer crafting <span>fast, search-optimized</span> interfaces.</h1>
       <p>
-        With 3 years of production experience scaling 5–6 live packaging & e-commerce websites, I specialize in modular Vanilla JavaScript (ES6+), native Gutenberg architectures, and Technical SEO performance engineering.
+        With 3 years of production experience managing and scaling 10+ live custom packaging, e-commerce, and editorial platforms, I specialize in modular Vanilla JavaScript (ES6+), Gutenberg architectures, and Technical SEO performance.
       </p>
       <div class="btn-group">
-        <a href="#projects" class="btn btn-primary">Explore Work</a>
+        <a href="#projects" class="btn btn-primary">Explore All Live Sites</a>
         <a href="https://github.com/a95022892-maker" target="_blank" class="btn btn-outline">GitHub Profile</a>
       </div>
     </section>
@@ -242,16 +242,16 @@
         <p>Production Web & Front-End Experience</p>
       </div>
       <div class="stat-card">
+        <h3>10+ Sites</h3>
+        <p>Live Packaging & Editorial Platforms Managed</p>
+      </div>
+      <div class="stat-card">
         <h3>200+ Pages</h3>
         <p>Optimized with Connected JSON-LD & Core Web Vitals</p>
       </div>
-      <div class="stat-card">
-        <h3>Zero-Bloat</h3>
-        <p>Custom Gutenberg & Vanilla JS over Heavy Page Builders</p>
-      </div>
     </div>
 
-    <!-- Interactive JS Widget right on Portfolio -->
+    <!-- Interactive JS Widget -->
     <section id="js-demo">
       <h2 class="section-title">Interactive Vanilla JS Showcase: Packaging Price & Surface Estimator</h2>
       <p class="section-sub">A live ES6+ DOM manipulation micro-app built directly into this portfolio—change dimensions to see real-time state updates.</p>
@@ -297,25 +297,215 @@
       </div>
     </section>
 
-    <!-- Dynamic Filtered Projects Section -->
+    <!-- Projects & Live Sites Section -->
     <section id="projects">
-      <h2 class="section-title">Featured Projects & Case Studies</h2>
-      <p class="section-sub">Filter by category (powered by Vanilla JavaScript DOM filtering).</p>
+      <h2 class="section-title">Live Production Websites & Projects</h2>
+      <p class="section-sub">Filter through custom packaging stores, editorial portals, and standalone JavaScript apps.</p>
       
       <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn active" data-filter="all">All Platforms</button>
+        <button class="filter-btn" data-filter="packaging">Packaging & E-Commerce</button>
+        <button class="filter-btn" data-filter="editorial">Editorial & Content</button>
         <button class="filter-btn" data-filter="js">JavaScript Apps</button>
-        <button class="filter-btn" data-filter="seo">Technical SEO & Speed</button>
-        <button class="filter-btn" data-filter="wp">Gutenberg & Custom UI</button>
       </div>
 
       <div class="grid" id="project-grid">
-        <!-- Project 1 -->
+        <!-- Packarena -->
+        <article class="card" data-category="packaging">
+          <div>
+            <span class="card-tag">Custom Packaging Platform</span>
+            <h3>Packarena.com</h3>
+            <p>Developing luxury visual branding, Gutenberg layouts, and high-converting custom packaging quote interfaces.</p>
+          </div>
+          <div>
+            <div class="tech-stack">
+              <span class="tech-pill">Gutenberg</span>
+              <span class="tech-pill">Vanilla JS</span>
+              <span class="tech-pill">Technical SEO</span>
+            </div>
+            <div class="card-links">
+              <a href="https://packarena.com" target="_blank">Visit Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CustomBoxMakers -->
+        <article class="card" data-category="packaging">
+          <div>
+            <span class="card-tag">Production E-Commerce</span>
+            <h3>CustomBoxMakers.com</h3>
+            <p>Managed and optimized front-end performance, custom product layouts, and responsive UI quote flows.</p>
+          </div>
+          <div>
+            <div class="tech-stack">
+              <span class="tech-pill">WordPress</span>
+              <span class="tech-pill">Custom CSS/JS</span>
+              <span class="tech-pill">Core Web Vitals</span>
+            </div>
+            <div class="card-links">
+              <a href="https://customboxmakers.com" target="_blank">Visit Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- DreamCustomBoxes -->
+        <article class="card" data-category="packaging">
+          <div>
+            <span class="card-tag">Production E-Commerce</span>
+            <h3>DreamCustomBoxes.com</h3>
+            <p>Engineered e-commerce product presentation, speed optimization, and seamless user navigation.</p>
+          </div>
+          <div>
+            <div class="tech-stack">
+              <span class="tech-pill">WooCommerce</span>
+              <span class="tech-pill">PHP / JS</span>
+              <span class="tech-pill">Speed Tuning</span>
+            </div>
+            <div class="card-links">
+              <a href="https://dreamcustomboxes.com" target="_blank">Visit Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PackLegacy -->
+        <article class="card" data-category="packaging">
+          <div>
+            <span class="card-tag">Packaging Solutions</span>
+            <h3>PackLegacy.com</h3>
+            <p>Optimized site performance, semantic DOM hierarchy, and responsive product page architectures.</p>
+          </div>
+          <div>
+            <div class="tech-stack">
+              <span class="tech-pill">WordPress</span>
+              <span class="tech-pill">UI Styling</span>
+              <span class="tech-pill">SEO Schema</span>
+            </div>
+            <div class="card-links">
+              <a href="https://packlegacy.com" target="_blank">Visit Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mario Packaging -->
+        <article class="card" data-category="packaging">
+          <div>
+            <span class="card-tag">Packaging Platform</span>
+            <h3>MarioPackaging.com</h3>
+            <p>Implemented custom front-end styling and layout enhancements for robust box catalog presentation.</p>
+          </div>
+          <div>
+            <div class="tech-stack">
+              <span class="tech-pill">HTML / CSS</span>
+              <span class="tech-pill">WordPress</span>
+              <span class="tech-pill">Responsive Design</span>
+            </div>
+            <div class="card-links">
+              <a href="https://mariopackaging.com" target="_blank">Visit Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Custom Candle Boxes -->
+        <article class="card" data-category="packaging">
+          <div>
+            <span class="card-tag">Niche Packaging</span>
+            <h3>CustomCandleBoxes.io</h3>
+            <p>Built UI components, product showcases, and styling for specialized candle packaging lines.</p>
+          </div>
+          <div>
+            <div class="tech-stack">
+              <span class="tech-pill">HTML / CSS</span>
+              <span class="tech-pill">UI Components</span>
+              <span class="tech-pill">UX Optimization</span>
+            </div>
+            <div class="card-links">
+              <a href="https://customcandleboxes.io" target="_blank">Visit Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Custom Rigid Boxes -->
+        <article class="card" data-category="packaging">
+          <div>
+            <span class="card-tag">Luxury Packaging</span>
+            <h3>CustomRigidBoxes.io</h3>
+            <p>Engineered luxury product grid structures and fast-loading media assets for high-end rigid box collections.</p>
+          </div>
+          <div>
+            <div class="tech-stack">
+              <span class="tech-pill">WordPress</span>
+              <span class="tech-pill">Performance</span>
+              <span class="tech-pill">Mobile UI</span>
+            </div>
+            <div class="card-links">
+              <a href="https://customrigidboxes.io" target="_blank">Visit Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Paradise Construction -->
+        <article class="card" data-category="packaging">
+          <div>
+            <span class="card-tag">Corporate Web Platform</span>
+            <h3>ParadiseConstruction.com</h3>
+            <p>Maintained structure, responsive grid layouts, and cross-browser compatibility for service pages.</p>
+          </div>
+          <div>
+            <div class="tech-stack">
+              <span class="tech-pill">WordPress</span>
+              <span class="tech-pill">Responsive Grid</span>
+              <span class="tech-pill">Debugging</span>
+            </div>
+            <div class="card-links">
+              <a href="https://paradiseconstruction.com" target="_blank">Visit Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Talk Trend Magazine -->
+        <article class="card" data-category="editorial">
+          <div>
+            <span class="card-tag">Editorial & Media</span>
+            <h3>TalkTrendMagzine.com</h3>
+            <p>Optimized content layout hierarchies, internal linking structures, and fast DOM rendering for articles.</p>
+          </div>
+          <div>
+            <div class="tech-stack">
+              <span class="tech-pill">Technical SEO</span>
+              <span class="tech-pill">Content Architecture</span>
+              <span class="tech-pill">Speed Optimization</span>
+            </div>
+            <div class="card-links">
+              <a href="https://talktrendmagzine.com" target="_blank">Visit Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Packaging Editorial -->
+        <article class="card" data-category="editorial">
+          <div>
+            <span class="card-tag">Industry Publication</span>
+            <h3>PackagingEditorial.com</h3>
+            <p>Managed connected JSON-LD schema graphs and semantic article layouts to scale organic search traffic.</p>
+          </div>
+          <div>
+            <div class="tech-stack">
+              <span class="tech-pill">JSON-LD Schema</span>
+              <span class="tech-pill">Semantic HTML</span>
+              <span class="tech-pill">SEO Caching</span>
+            </div>
+            <div class="card-links">
+              <a href="https://packagingeditorial.com" target="_blank">Visit Site ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- JavaScript Editor Project -->
         <article class="card" data-category="js">
           <div>
             <span class="card-tag">JavaScript Application</span>
             <h3>Interactive Packaging Editor</h3>
-            <p>Custom JavaScript tool built to configure packaging dielines, dimensions, and real-time UI state updates in the browser.</p>
+            <p>Custom JavaScript tool built to configure packaging dielines, dimensions, and real-time UI state updates in browser.</p>
           </div>
           <div>
             <div class="tech-stack">
@@ -325,44 +515,6 @@
             </div>
             <div class="card-links">
               <a href="https://github.com/a95022892-maker/packaging-editor" target="_blank">View Repository →</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="card" data-category="wp">
-          <div>
-            <span class="card-tag">Custom Gutenberg & Front-End</span>
-            <h3>Luxury Custom Packaging Platform</h3>
-            <p>Engineered responsive product layouts, interactive quote modals, and lightweight Gutenberg blocks without heavy page builders.</p>
-          </div>
-          <div>
-            <div class="tech-stack">
-              <span class="tech-pill">Vanilla JS</span>
-              <span class="tech-pill">Gutenberg Blocks</span>
-              <span class="tech-pill">Custom PHP</span>
-            </div>
-            <div class="card-links">
-              <a href="#contact">Request Live URLs →</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 3 -->
-        <article class="card" data-category="seo">
-          <div>
-            <span class="card-tag">Technical SEO & Performance</span>
-            <h3>Connected JSON-LD & Core Web Vitals Overhaul</h3>
-            <p>Collaborated with SEO specialists to deploy programmatic Product, FAQ, and Breadcrumb schema graphs and defer render-blocking JS across 200+ pages.</p>
-          </div>
-          <div>
-            <div class="tech-stack">
-              <span class="tech-pill">JSON-LD Schema</span>
-              <span class="tech-pill">INP / LCP / CLS</span>
-              <span class="tech-pill">Async/Defer JS</span>
-            </div>
-            <div class="card-links">
-              <a href="#contact">Architecture Details →</a>
             </div>
           </div>
         </article>
